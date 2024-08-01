@@ -95,10 +95,52 @@ header {
     justify-content: center;
 }
 
+/* HERO SECTION */
+
+.hero {
+    height: 100vh;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0 20px;
+
+}
+
+.hero_col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_col1 .title {
+    font-size: 20px;
+}
+
+.hero_col1 .subtitle {
+    font-size: 52px;
+}
+
+.hero_col1 .description {
+    font-size: 18px;
+}
+
+.hero_col2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_col2 img {
+    width: 100%;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 992px) {
-    .navbar .links, .navbar .cta_btn {
+
+    .navbar .links,
+    .navbar .cta_btn {
         display: none;
     }
 
