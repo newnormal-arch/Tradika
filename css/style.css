@@ -21,6 +21,10 @@ a:hover {
     color: blueviolet;
 }
 
+section {
+    padding: 0 3rem;
+}
+
 /* HEADER */
 
 header {
@@ -50,7 +54,7 @@ header {
 }
 
 .cta_btn {
-    background-color: aqua;
+    background-color: #36B864;
     padding: 0.5rem 1rem;
     cursor: pointer;
     border: none;
@@ -99,18 +103,17 @@ header {
 
 .hero {
     height: 100vh;
-    background-image: url(../images/hero.jpg);
+    background-image: url(../images/hero_image.png);
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 0 20px;
-
 }
 
 .hero_col1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 60%;
 }
 
 .hero_col1 .title {
@@ -119,20 +122,35 @@ header {
 
 .hero_col1 .subtitle {
     font-size: 52px;
+    margin-top: 2rem;
 }
 
 .hero_col1 .description {
     font-size: 18px;
+    margin-top: 2rem;
 }
 
-.hero_col2 {
+.hero_col1 .btn_col {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
 }
 
-.hero_col2 img {
-    width: 100%;
+.hero_col1 .btn_col .btn_col1 {
+    background-color: #36B864;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+.hero_col1 .btn_col .btn_col2 {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: solid 1px #36B864;
+    border-radius: 20px;
+    font-size: 24px;
 }
 
 /* MEDIA QUERIES */
@@ -150,6 +168,10 @@ header {
 
     .dropdown_menu {
         display: block;
+    }
+
+    .hero_col1 {
+        width: 100%;
     }
 }
 
