@@ -21,6 +21,15 @@ a:hover {
     color: blueviolet;
 }
 
+input {
+    padding: 0.5rem 1rem;
+}
+
+textarea {
+    resize: none;
+    padding: 0.5rem 1rem;
+}
+
 section {
     padding: 0 3rem;
 }
@@ -151,6 +160,227 @@ header {
     border: solid 1px #36B864;
     border-radius: 20px;
     font-size: 24px;
+}
+
+/* ABOUT US SECTION */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+}
+
+.about_col1,
+.about_col2 {
+    width: 50%;
+}
+
+.about_col2 .about_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about_col2 .about_list i {
+    color: #36B864;
+}
+
+.about_btn {
+    background-color: #36B864;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_col2 h1,
+.about_col2 p,
+.about_list,
+.about_btn {
+    margin-top: 2rem;
+}
+
+/* SERVICES LISTINGS */
+.services {
+    background-image: url(../images/services_background.png);
+    background-size: cover;
+    padding: 2rem;
+}
+
+.service_intro {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    border-bottom: solid 1px #000;
+}
+
+.service_intro span,
+.service_intro h2 {
+    margin: 2rem 0;
+}
+
+.services_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 30px;
+}
+
+.service_item {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.service_item p {
+    margin: 1.5rem 0;
+}
+
+.service_item h2 {
+    margin-top: 1.5rem;
+}
+
+/* .service_btn1 {
+    background-color: #36B864;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+} */
+
+.service_btn2,
+.service_btn1 {
+    border: solid 1px #000;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* SOLUTIONS SECTION */
+
+.solutions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.solutions_col1,
+.solutions_col2 {
+    width: 50%;
+
+}
+
+.solutions_col1 h1,
+.solutions_col1 p,
+.solutions_btn {
+    margin-top: 2rem;
+}
+
+.solutions_btn {
+    background-color: #36B864;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTACT SECTION */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact_col1, .contact_col2 {
+    width: 50%;
+}
+
+.contact_card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact_icon {
+    background-color: #36B864;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.input_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact_col2 p, .input_fields, .contact_col2 button {
+    margin-top: 2rem;
+}
+
+.contact_col2 button {
+    background-color: #36B864;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #111D15;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    color: #fff;
+}
+
+.footer_col1, .footer_col2, .footer_col3 {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* MEDIA QUERIES */
