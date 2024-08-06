@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: blueviolet;
+    color: var(--primary-color);
 }
 
 input {
@@ -73,11 +73,12 @@ header {
     cursor: pointer;
     border: none;
     border-radius: 20px;
+    color: #fff;
 }
 
 .cta_btn:hover {
     scale: 1.05;
-    color: black;
+    color: #fff;
 }
 
 /* DROPDOWN MENU */
@@ -176,7 +177,7 @@ header {
 }
 
 .hero_col1 .btn_col .btn_col2 a {
-    color: #000;
+    color: var(--primary-color);
 }
 
 .hero_col1 .btn_col .btn_col2:hover {
@@ -218,6 +219,14 @@ header {
     justify-content: center;
 }
 
+.about_btn a {
+    color: #fff;
+}
+
+.about_btn:hover {
+    scale: 1.05;
+}
+
 .about_col2 h1,
 .about_col2 p,
 .about_list,
@@ -228,7 +237,8 @@ header {
 /* SERVICES LISTINGS */
 .services {
     /* background-image: url(../images/services_background.png); */
-    background-size: cover;
+    /* background-size: cover; */
+    background-color: var(--primary-color);
     padding: 2rem;
 }
 
@@ -272,7 +282,7 @@ header {
 
 .service_btn2,
 .service_btn1 {
-    border: solid 1px #000;
+    border: solid 1px var(--primary-color);
     background-color: #fff;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -283,6 +293,11 @@ header {
     align-items: center;
     justify-content: center;
     margin: auto;
+    
+}
+
+.service_btn1:hover, .service_btn2:hover {
+    scale: 1.05;
 }
 
 /* SOLUTIONS SECTION */
@@ -320,6 +335,14 @@ header {
     justify-content: center;
 }
 
+.solutions_btn a {
+    color: #fff;
+}
+
+.solutions_btn:hover {
+    scale: 1.05;
+}
+
 /* CONTACT SECTION */
 .contact {
     display: grid;
@@ -347,6 +370,10 @@ header {
     padding: 0.5rem;
 }
 
+.contact_icon i {
+    color: #fff;
+}
+
 .input_fields {
     display: flex;
     flex-direction: column;
@@ -368,6 +395,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+}
+
+.contact_col2 button:hover {
+    scale: 1.05;
 }
 
 /* FOOTER SECTION */
