@@ -14,7 +14,9 @@
     <!-- MONTSERRAT FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <title>Tradika EverFresh Cleaning Co.</title>
 </head>
@@ -51,8 +53,8 @@
                 <p class="description">We provide Performing cleaning tasks using the least amount of time, energy, and
                     money.</p>
                 <div class="btn_col">
-                    <div class="btn_col1"><a href="#">Get Started</a></div>
-                    <div class="btn_col2"><a href="#">Services</a></div>
+                    <div class="btn_col1"><a href="#contact">Get Started</a></div>
+                    <div class="btn_col2"><a href="#services">Services</a></div>
                 </div>
             </div>
         </section>
@@ -142,9 +144,52 @@
                 <h1>High-Quality and Friendly Services at Fair Prices</h1>
                 <p>We provide comprehensive cleaning services tailored to your needs. From residential cleaning services
                 </p>
-                <div class="solutions_btn"><a href="#">Get A Quote</a></div>
+                <div class="solutions_btn"><a href="#contact">Get A Quote</a></div>
             </div>
             <div class="solutions col2"><img src="./images/Image.png" alt="Additional Cleaning Services"></div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="testimonials">
+            <h2>Hear what our clients say:</h2>
+            <div class="testimonials_list">
+                <div class="testimonial_cards">
+                    <div class="rating">
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                    </div>
+                    <div class="testimonial_title">"Excellent Service"</div>
+                    <div class="testimonial_comment">Their service is brilliant! I really hope some of them are now using your service.</div>
+                    <div class="testimonial_name">Fiona</div>
+                </div>
+                <div class="testimonial_cards">
+                    <div class="rating">
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                    </div>
+                    <div class="testimonial_title">"Love the flexibility"</div>
+                    <div class="testimonial_comment">We are very happy with the box and we value that we can have the standard box or choose our own.</div>
+                    <div class="testimonial_name">Joseph</div>
+                </div>
+                <div class="testimonial_cards">
+                    <div class="rating">
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star checked"></span>
+                        <span class="bx bxs-star"></span>
+                    </div>
+                    <div class="testimonial_title">"Fantastic quality"</div>
+                    <div class="testimonial_comment">I’m really appreciating the quality and presentation. The flavour of the veg is outstanding.</div>
+                    <div class="testimonial_name">Michelle</div>
+                </div>
+            </div>
         </section>
 
         <!-- CONTACT US SECTION -->
@@ -177,37 +222,46 @@
                 <h1>Keep In Touch</h1>
                 <p>We prioritize responding to your inquiries promptly to ensure you receive the assistance you need in
                     a timely manner</p>
-                <div class="input_fields">
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <textarea name="message" id="message" rows="5"  placeholder="Message"></textarea>
-                </div>
-                <button>Send Message</button>
+                <form action="https://formsubmit.co/info@tradika.co.za" method="post">
+                    <div class="input_fields">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
         </section>
 
         <!-- FOOTER SECTION -->
         <section class="footer">
-            <div class="footer_col1">
-                <div class="logo"><a href="#"> <img src="./images/Tradika Logo.png" alt=""> </a></div>
-                <p>Tradika EverFresh Cleaning Co. provides expert carpet and upholstery cleaning, industrial cleaning, office cleaning, and residential deep cleaning services, ensuring pristine and hygienic environments for businesses and homes.</p>
+            <div class="footer_content">
+                <div class="footer_col1">
+                    <div class="logo"><a href="#"> <img src="./images/Tradika Logo.png" alt=""> </a></div>
+                    <p>Tradika EverFresh Cleaning Co. provides expert carpet and upholstery cleaning, industrial cleaning,
+                        office cleaning, and residential deep cleaning services, ensuring pristine and hygienic environments
+                        for businesses and homes.</p>
+                </div>
+                <div class="footer_col2">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col3">
+                    <h3>More</h3>
+                    <ul>
+                        <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="./terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer_col2">
-                <h3>Company</h3>
-                <ul>
-                    <li>About</li>
-                    <li>Services</li>
-                </ul>
-            </div>
-            <div class="footer_col3">
-                <h3>More</h3>
-                <ul>
-                    <li>Privacy Policy</li>
-                    <li>Terms & Conditions</li>
-                </ul>
-            </div>
+            <p>2024 Copyright Tradika EverFresh Cleaning Co. (PTY) LTD | Built by Bongani Ntshingila</p>
         </section>
 
+        <!-- FLOATING WHATSAPP BUTTON -->
+         <!-- <a href="https://wa.me/27113465040" class="float"><i class='bx bxl-whatsapp'></i></a> -->
     </main>
 
     <!-- JAVASCRIPT -->

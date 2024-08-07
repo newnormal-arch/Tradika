@@ -119,6 +119,26 @@ header {
     justify-content: center;
 }
 
+/* FLOATING WHATSAPP BUTTON */
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* HERO SECTION */
 
 .hero {
@@ -300,7 +320,8 @@ header {
     margin: auto;
 }
 
-.service_btn1:hover, .service_btn2:hover {
+.service_btn1:hover,
+.service_btn2:hover {
     scale: 1.05;
 }
 
@@ -308,7 +329,8 @@ header {
 
 .solutions {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 50px;
     align-items: center;
     padding: 2rem;
 
@@ -347,6 +369,49 @@ header {
     scale: 1.05;
 }
 
+/* TESTIMONIALS SECTION */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 2rem;
+}
+
+.testimonials h2 {
+    margin: 2rem 0;
+}
+
+.testimonials_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.testimonial_cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checked {
+    color: orange;
+}
+
+.testimonial_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.testimonial_name {
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+
 /* CONTACT SECTION */
 .contact {
     display: grid;
@@ -357,7 +422,8 @@ header {
     border-top: solid 1px rgba(0, 0, 0, 0.1);
 }
 
-.contact_col1, .contact_col2 {
+.contact_col1,
+.contact_col2 {
     width: 100%;
 }
 
@@ -385,7 +451,9 @@ header {
     gap: 10px;
 }
 
-.contact_col2 p, .input_fields, .contact_col2 button {
+.contact_col2 p,
+.input_fields,
+.contact_col2 button {
     margin-top: 2rem;
 }
 
@@ -411,6 +479,18 @@ header {
 
 .footer {
     background-color: #111D15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    color: #fff;
+    margin: 2rem 0;
+}
+
+.footer_content {
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     align-items: center;
@@ -423,7 +503,9 @@ header {
     margin-bottom: 20px;
 }
 
-.footer_col1, .footer_col2, .footer_col3 {
+.footer_col1,
+.footer_col2,
+.footer_col3 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -437,6 +519,10 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 0.5rem;
+}
+
+.footer a {
+    color: #fff;
 }
 
 /* MEDIA QUERIES */
